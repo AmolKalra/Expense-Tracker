@@ -44,8 +44,8 @@ function displayExpenses() {
       <td>${expense.name}</td>
       <td>${expense.date}</td>
       <td>$${expense.amount.toFixed(2)}</td>
-      <td><button onclick="deleteExpense(${index})">Delete</button></td>
-    `;
+      <td><center><button class="delete-button" onclick="deleteExpense(${index})">Delete</button></center></td>
+          `;
     expenseList.appendChild(row);
   });
 }
