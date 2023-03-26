@@ -50,7 +50,14 @@ function displayExpenses() {
   });
 }
 
-
+function deleteExpense(index) {
+    // Remove the expense from the expenses array
+    expenses.splice(index, 1);
+  
+    // Update the UI with the new expenses and total amount
+    displayExpenses();
+    displayTotal();
+  }
 
 // Function to display the total amount in the UI
 function displayTotal() {
